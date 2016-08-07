@@ -8,7 +8,7 @@
 #define __FUNCTABLE_H__
 
 //定义函数指针，被注册的函数指针需为此类型
-typedef int (*PFunc)(void* p, int nFlag1, int nFlag2);
+typedef int (*PFunc)(int nFlag1, int nFlag2, void* pData);
 
 typedef struct tabFuncCell
 {
